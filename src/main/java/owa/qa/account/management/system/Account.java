@@ -1,4 +1,4 @@
-package account.management.system;
+package owa.qa.account.management.system;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,7 +11,7 @@ public class Account {
 	private String accountNumber;
 	
 	
-	Account(String firstName, String lastName, String accountNumber){
+	public Account(String firstName, String lastName, String accountNumber){
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.accountNumber = accountNumber;

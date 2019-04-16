@@ -1,6 +1,8 @@
-package account.management.system;
+package owa.qa.account.management.system;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import com.google.gson.Gson;
@@ -12,14 +14,13 @@ public class service {
 		getFromMap(1);
 		Gson gson = new Gson();
 		String json = gson.toJson(accountmap);
-		System.out.println(json);
-		
-		
-		
-		
+		System.out.println(json);	
 	
 	}
-	static HashMap<Integer, Account>accountmap = new HashMap<>();
+	
+	List<Account> accountList = new ArrayList<Account>();
+	
+	static HashMap<Integer, Account>accountmap = new HashMap<Integer, Account>();
 	
 	static int count = 0;
 	
